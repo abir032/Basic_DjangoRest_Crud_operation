@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <title>
+        Admin Index
+    </title>
+  </head>
+
+  <body>
+    <h3> welcome to adminpage</h3>
+    <button type = "submit"><a href="/signin">Sign in</a></button>
+    <button type = "submit"><a href="/signup">Sign up</a></button>
+    <button type = "submit"><a herf = "/signout">Sign out</a></button>
+     <br>
+    <form action = "/signup" method = "POST">
+        {% csrf_token %}
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email</label> <br>
+        <input type="text" id="email" name="email"><br>
+        <label for="pass">Password</label><br>
+        <input type="text" id="pass" name="pass"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+  </body>
+</html>
+
